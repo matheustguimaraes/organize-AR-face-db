@@ -37,7 +37,7 @@ else:
     save_path = os.path.dirname(arg_ds)
 
 # List of images in dataset
-image_paths = list(lp.list_images(arg_ds, image_type='.raw'))
+image_paths = list(lp.list_files(arg_ds, valid_exts='.raw'))
 
 # ImageMagick command to convert from .raw to .jpeg
 convert = 'convert -depth 8 -interlace plane -size 768x576'
