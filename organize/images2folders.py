@@ -1,7 +1,7 @@
 """
 Copy images to folders
 
-This script is used to organize AR dataset in train, scarf and glasses, and
+This script is used to organize AR dataset in train, scarf and glass, and
 separate the two sessions from dataset
 eg. one folder for train and two for test, from each session folder
 
@@ -49,7 +49,7 @@ for i, path in enumerate(paths_list):
     else:
         raise ValueError('The session was not defined in args, '
                          'one of three folders must be defined: '
-                         'train, scarf or glasses')
+                         'train, scarf or glass')
 
     path[1] = int(path[1])
     path[2] = int(path[2])
@@ -66,6 +66,6 @@ for i, path in enumerate(paths_list):
     # Copy to scarf folder
     elif division + 10 < path[2] < division + 14:
         system('cp {} {}scarf/{}/'.format(img_paths[i], folder, path_temp))
-    # Copy to glasses folder
+    # Copy to glass folder
     elif division + 7 < path[2] < division + 11:
-        system('cp {} {}glasses/{}/'.format(img_paths[i], folder, path_temp))
+        system('cp {} {}glass/{}/'.format(img_paths[i], folder, path_temp))
