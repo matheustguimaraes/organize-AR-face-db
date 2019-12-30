@@ -7,7 +7,7 @@ ImageMagick installation:
     sudo apt install imagemagick
 
 Usage:
-    python convert_raw.py --dataset ds/AR_raw/ --save ds/AR_jpeg/
+python convert_raw.py --dataset ds/AR_raw/ --save ds/AR_jpeg/
 
 TODO: Convert this code to bash script
 """
@@ -36,7 +36,7 @@ if args["save"]:
 else:
     save_path = os.path.dirname(arg_ds)
 
-# List of images in dataset
+# List dataset images
 image_paths = list(lp.list_files(arg_ds, valid_exts='.raw'))
 
 # ImageMagick command to convert from .raw to .jpeg
