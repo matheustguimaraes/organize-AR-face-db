@@ -7,7 +7,7 @@ ImageMagick installation:
     sudo apt install imagemagick
 
 Usage:
-python convert_raw.py --dataset ds/AR_raw/ --save ds/AR_jpeg/
+python raw2jpeg.py --dataset ds/AR_raw/ --save ds/AR_jpeg/
 
 TODO: Convert this code to bash script
 """
