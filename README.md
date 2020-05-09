@@ -36,7 +36,7 @@ python organize/create_folders.py \
 ```
 
 ### Store 4 images of each person in a folder
-Example: Dataset first session:
+Example: Store images of the first session:
 ```
 python organize/images2folders.py \
     -a databases/AR/all_images \
