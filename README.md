@@ -1,7 +1,7 @@
 # Organize [AR Face Database](http://www2.ece.ohio-state.edu/~aleix/ARdatabase.html)
 
 Scripts to organize the AR Face Database
-1. Transform .raw files to .jpeg images
+1. Transform .raw files into .jpeg images
 2. Create folders to store separate images in classes
 3. Separate images in train, scarf and glass folders
 
